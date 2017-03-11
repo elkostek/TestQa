@@ -13,15 +13,18 @@ namespace Selenium.Module.Tests
         //     Browser.Initialize();
         //     Pages.Login.LogIn();
         //}
+
+
         [SetUp]
         //[ClassInitialize]
         //[TestFixtureSetUp]
-        public static void Initialize()
+        public void Initialize()
         { 
-
+            //Browser browser = new Browser();
+            //browser.Initialize();
             Browser.Initialize();
-           // Pages.Login.LogIn();
-
+            // Pages.Login.LogIn();
+            //_webDriver.Navigate().GoToUrl(_baseUrl);
         }
 
         //[TestFixtureTearDown]
@@ -29,7 +32,7 @@ namespace Selenium.Module.Tests
         public void Cleanup()
         {
             Browser.Close();
-            //Browser.Quit();
+            Browser.Quit();
         }
 
         //[TearDown]

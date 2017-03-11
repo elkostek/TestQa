@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Selenium.Module.Tests
 {
-    class RegisterTests: TestWithoutAccountrBase
+    class RegisterTests 
     {
     }
 }

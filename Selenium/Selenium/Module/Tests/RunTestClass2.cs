@@ -13,6 +13,7 @@ namespace Selenium.Module.Tests
         [Test]
         public void RunTest2()
         {
+
             Pages.Main.ClickMainTabBooks();
             Pages.Main.ClickMainTabEbooks();
         }
