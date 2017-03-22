@@ -13,23 +13,23 @@ namespace Selenium.Module.Tests
         //     Browser.Initialize();
         //     Pages.Login.LogIn();
         //}
-        [SetUp]
+       
         //[ClassInitialize]
-        //[TestFixtureSetUp]
+        [TestFixtureSetUp]
         public static void Initialize()
         { 
 
             Browser.Initialize();
-           // Pages.Login.LogIn();
+            Pages.Login.LogIn();
 
         }
 
-        //[TestFixtureTearDown]
-        [TearDown]
+        [TestFixtureTearDown]
+        //[TearDown]
         public void Cleanup()
         {
             Browser.Close();
-            //Browser.Quit();
+            Browser.Quit();
         }
 
         //[TearDown]
